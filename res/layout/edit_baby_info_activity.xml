@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <TextView
+            android:id="@+id/ContentTopText"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/register_last_step" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_common_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/btn_change_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/baby_photo_view"
+            android:background="@drawable/button07_bg" >
+        </include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/line" />
+
+        <!-- 昵称 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/baby_nickname_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/et_baby_nickname"
+                    style="@style/NormalEditText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_m_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_nickname_hint"
+                    android:imeOptions="actionNext"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="?attr/normalTextColorReferenceValue" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_nickname_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/delete_bg"
+                    android:visibility="gone" >
+                </ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/line" />
+        <!-- 性别 -->
+
+        <LinearLayout
+            android:id="@+id/btn_choose_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:background="@drawable/button07_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/baby_sex_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_m_padding"
+                    android:layout_weight="1"
+                    android:hint="@string/register_sex_hint"
+                    android:text=""
+                    android:textColor="?attr/normalTextColorReferenceValue"
+                    android:textColorHint="@color/color_hint"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gray_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:id="@+id/btn_choose_born"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:background="@drawable/button07_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/baby_born_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_born"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_m_padding"
+                    android:layout_weight="1"
+                    android:hint="@string/register_birthday_hint"
+                    android:text=""
+                    android:textColor="?attr/normalTextColorReferenceValue"
+                    android:textColorHint="@color/color_hint"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gray_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/table_item_height"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/table_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/table_item_padding"
+        android:paddingRight="@dimen/table_item_padding" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/password_label"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/NormalEditText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_m_padding"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:hint="@string/register_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:text=""
+            android:textColor="?attr/normalTextColorReferenceValue" />
+    </LinearLayout>
+
+    <com.yujunkang.fangxinbao.control.NetworkProgressButton
+        android:id="@+id/btn_register_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_green"
+        app:buttonText="@string/register_done"
+        app:loadingPrompt="@string/register_done_loading"
+        app:textSize="18" >
+    </com.yujunkang.fangxinbao.control.NetworkProgressButton>
+
+</LinearLayout>

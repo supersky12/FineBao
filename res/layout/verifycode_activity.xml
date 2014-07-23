@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:lefticon="@drawable/back_btn_normal" />
+
+        <TextView
+            android:id="@+id/ContentTopText"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/confirm_verifycode_activity" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:text="@string/fetch_verifycode_country_label"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="@dimen/text_size_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height_l"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_verifynumber"
+            style="@style/NormalEditText"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/register_verifycode_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/btn_getverifynumber"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button05_bg"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="重新获取"
+            android:textColor="#ffffffff"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+     <TextView
+        android:id="@+id/btn_can_not_receive_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="8dip"
+        android:text="@string/verifycode_no_receive"
+        android:visibility="gone"
+        android:textColor="@color/blue_light"
+        
+        android:textSize="@dimen/text_size_15" />
+    
+    
+    
+    <com.yujunkang.fangxinbao.control.NetworkProgressButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_green"
+        app:buttonText="@string/verifycode_confirm"
+        app:loadingPrompt="@string/verifycode_confirm_loading"
+        app:textSize="18" >
+    </com.yujunkang.fangxinbao.control.NetworkProgressButton>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">放心宝</string>
+    <string name="main_title">放心宝</string>
+    <string name="main_prompt">24小时不间断体温检测</string>
+    <string name="login_title">登录</string>
+    <string name="login_forget_password">忘记密码?</string>
+    <string name="login_change_national_country">国际手机号</string>
+    <string name="login_change_china_country">中国手机号</string>
+    <string name="fetch_verifycode_country_label">国家和地区</string>
+    <string name="verifycode_prompt">已发送短信至 %s</string>
+    <string name="error_country_code">国家代码无效</string>
+    <string name="baby_photo_label">头像</string>
+    <string name="baby_nickname_label">宝贝昵称</string>
+    <string name="baby_sex_label">性别</string>
+    <string name="baby_born_label">生日</string>
+    <string name="password_label">密码</string>
+    <string name="register_email_prompt">如果您收不到短信验证码，请尝试使用电子邮箱注册。</string>
+    <string name="submit_email_prompt">请确保邮箱地址真实有效，以防您忘记密码后不能重设密码。邮箱地址设置后不能更改。</string>
+    <string name="reset_password_new_password_label">密码</string>
+    <string name="change_phone_password_label">登录密码</string>
+    <!-- 主界面 -->
+    <string name="check_status">正在测定...</string>
+    <string name="string_null">-   -</string>
+    <string name="temperature_symbol">℃</string>
+    <string name="settings_account">我的账号</string>
+    <string name="settings_health">实时健康概况</string>
+    <string name="settings_health_history">历史健康记录</string>
+    <string name="settings_health_info">宝宝健康百科</string>
+    <string name="settings_preferences">设置</string>
+    <string name="settings_about">关于</string>
+    <string name="threedays_temperature_info">72小时体温概况</string>
+    <string name="continued_time">持续发热时间</string>
+    <string name="max_temperature">最高体温</string>
+    <string name="onedays_temperature_info">24小时体温变化</string>
+    <string name="temperature_max_desc">请给你宝宝服用退烧药，防止发生惊厥，若不能退烧请前往医院就医</string>
+    <string name="temperature_middle_desc">请给你宝宝服用退烧药，防止发生惊厥，若不能退烧请前往医院就医</string>
+    <string name="temperature_normal_desc">您的宝宝当前体温完全正常，请放心。</string>
+    <string name="checked">测定</string>
+    <!-- 宝宝信息 -->
+    <string name="check_other_baby_label">查看其他宝宝</string>
+    <string name="edit_baby_nickname_label">昵称</string>
+    <string name="baby_sex_boy">男</string>
+    <string name="baby_sex_girl">女</string>
+
+    <!-- 关于 -->
+    <string name="about_sina_label">新浪微博</string>
+    <string name="about_sina_fangxinbao">放心宝</string>
+    <string name="about_service_phone">客服电话</string>
+    <string name="about_check_version">检测新版本</string>
+    <string name="about_feedback">用户反馈</string>
+    <string name="about_agreement">用户协议</string>
+    <!-- 设置 -->
+    <string name="settings_battery">温度计电量</string>
+    <string name="settings_max_temperature_title">高温报警</string>
+    <string name="settings_min_temperature_title">低温报警</string>
+    <string name="settings_normal_temperature_title">温度标准</string>
+    <string name="settings_max_temperature_prompt">高于此温度时报警</string>
+    <string name="settings_min_temperature_prompt">低于此温度时报警</string>
+    <string name="settings_min_temperature">低温报警</string>
+    <string name="settings_phone">手机号</string>
+    <string name="settings_password">修改密码</string>
+    <string name="settings_binding_sina">新浪微博</string>
+    <string name="settings_email">绑定邮箱</string>
+    <string name="settings_language">界面语言</string>
+    <string name="binding_sina_default_label">未绑定</string>
+    <string name="binding_email_default_label">未绑定</string>
+    <string name="settings_language_default_label">跟随系统设置</string>
+    <string name="hours">小时</string>
+    <string name="modify_phone_success_tip">修改手机号成功</string>
+    <string name="temperature_format_c">%s℃</string>
+    <string name="temperature_format_f">%s℉</string>
+    <!-- 日历 -->
+    <string name="today">今天</string>
+    <string name="note_tip">出现了38.1℃的高温</string>
+
+    <!-- 修改密码 -->
+    <string name="old_password_label">原密码</string>
+    <string name="new_password_label">新密码</string>
+    <!-- 意见反馈 -->
+    <string name="feedback_contact_label">您的联系方式（电话、qq或邮箱）</string>
+
+</resources>

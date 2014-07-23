@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_settings_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="5dip" >
+
+        <com.yujunkang.fangxinbao.control.image.RoundedNetWorkImageView
+            android:id="@+id/iv_baby_photo"
+            android:layout_width="63dip"
+            android:layout_height="63dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_03"
+            app:border_color="@color/transparent"
+            app:border_width="1dip"
+            app:corner_radius="12dip"
+            app:oval="true" />
+
+        <TextView
+            android:id="@+id/tv_baby_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/settings_account"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_settings_bg"
+        android:drawableLeft="@drawable/icon_health"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="5dip"
+        android:text="@string/settings_health"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/btn_health_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_settings_bg"
+        android:drawableLeft="@drawable/icon_health_history"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="5dip"
+        android:text="@string/settings_health_history"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/btn_health_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_settings_bg"
+        android:drawableLeft="@drawable/icon_health_info"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="5dip"
+        android:text="@string/settings_health_info"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_settings_bg"
+        android:drawableLeft="@drawable/icon_settings"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="5dip"
+        android:text="@string/settings_preferences"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_settings_bg"
+        android:drawableLeft="@drawable/icon_about"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="5dip"
+        android:text="@string/settings_about"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="20dip" />
+
+</LinearLayout>

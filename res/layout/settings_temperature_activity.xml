@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleLeftButtonStyle" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/select_country_activity" />
+
+        <TextView
+            style="@style/TitleRightButtonStyle"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_setting_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:gravity="center_horizontal"
+        android:textSize="20dip"
+        android:textColor="?attr/normalTextColorReferenceValue" />
+
+    <com.yujunkang.fangxinbao.control.SettingTemperatureView
+        android:id="@+id/v_settings_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+    </com.yujunkang.fangxinbao.control.SettingTemperatureView>
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_green"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="@string/edit_baby_nickname"
+        android:textSize="18dip" />
+
+</LinearLayout>

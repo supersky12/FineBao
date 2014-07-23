@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:middletxt="@string/button_cancel"
+            app:txtcolor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_edit_tip_title"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/about_activity_title" />
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_xl_padding"
+            app:middletxt="@string/button_save"
+            app:txtcolor="@color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_health_tip"
+        style="@style/NormalEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/health_tip_hint"
+        android:layout_marginTop="5dip"
+        android:imeOptions="actionDone"
+        android:text=""
+        android:textColor="?attr/normalTextColorReferenceValue" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 注册 -->
+    <string name="main_button_register">新用户快速开始</string>
+    <string name="main_button_login">老用户登录</string>
+    <string name="register_button_cancel">取消</string>
+    <string name="register_fetch_verifycode_loading">正在发送验证码...</string>
+    <string name="register_fetch_verifycode">下一步</string>
+    <string name="register_done">完成</string>
+    <string name="register_done_loading">正在提交信息...</string>
+    <string name="verifycode_confirm_loading">正在验证...</string>
+    <string name="verifycode_confirm">确认</string>
+    <string name="verifycode_no_receive">收不到短信验证码？</string>
+    <string name="dialog_cancel_text">取消</string>
+    <string name="dialog_register_by_email">邮箱注册</string>
+    <string name="dialog_register_confirm_email">确认注册</string>
+    <string name="dialog_binding_email_confirm">确认绑定</string>
+    <string name="login">登录</string>
+    <string name="login_loading">正在登录...</string>
+    <string name="reset_password_loading">正在重置密码...</string>
+    <string name="reset_password">完成</string>
+    <string name="edit_baby_nickname">保存</string>
+
+    <!-- 分享 -->
+
+    <string name="share_send_sms">发送短信</string>
+    <string name="share_send_email">发送邮件</string>
+    <string name="share_sina_weibo">分享到新浪微博</string>
+    <string name="share_weixin">分享到微信</string>
+    <string name="share_weixin_friendcircle">分享到朋友圈</string>
+    <string name="share_copy">复制</string>
+    <string name="share_qq">QQ</string>
+    <!-- 修改手机号 -->
+    <string name="changephone_login_loading">正在登录...</string>
+    <string name="changephone_login">下一步</string>
+
+    <!-- 修改email -->
+    <string name="email_confirm_loading">正在发送邮件...</string>
+    <string name="email_confirm">确认</string>
+    <string name="email_binding_confirm_loading">正在提交信息...</string>
+    <string name="setting_logout">退出登陆</string>
+    <!-- 修改密码 -->
+    <string name="modify_password_loading">正在修改密码...</string>
+    <string name="modify_password">确认修改</string>
+    <string name="temperature_expand">收起</string>
+    <string name="temperature_collapse">查看更多</string>
+    <string name="exit_app">退出</string>
+
+    <!-- 添加宝宝 -->
+    <string name="add_baby">我还有一个宝宝</string>
+
+    <!-- 剪切图片 -->
+    <string name="button_cancel">取消</string>
+    <string name="button_done">确定</string>
+
+    <!-- 设置温度标准 -->
+    <string name="button_degreecelsius">摄氏度（℃）</string>
+    <string name="button_degreefahrenheit">华氏度（℉）</string>
+    <!-- 意见反馈 -->
+    <string name="button_submit">提交</string>
+
+</resources>

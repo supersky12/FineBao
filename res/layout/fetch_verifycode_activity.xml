@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:middletxt="@string/register_button_cancel"
+            app:txtcolor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_fetch_verifycode_title"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/fetch_verifycode_activity_register" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="@dimen/layout_margin_15dip"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/btn_select_country"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height_l"
+        android:background="@drawable/button07_bg" >
+
+        <TextView
+            android:id="@+id/tv_countryNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            android:text="@string/fetch_verifycode_country_label"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageView
+            android:id="@+id/iv_country_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_xl_padding"
+            android:src="@drawable/gray_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_nomal_padding"
+            android:layout_toLeftOf="@id/iv_country_arrow"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_l"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_country_code"
+            style="@style/NormalEditText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="+"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical_line" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical" >
+
+            <com.yujunkang.fangxinbao.control.validator.FormEditText
+                android:id="@+id/et_phone"
+                style="@style/NormalEditText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_m_padding"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/register_phone_hint"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                app:editType="phone" />
+
+            <ImageButton
+                android:id="@+id/ibtn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/layout_xl_padding"
+                android:background="@drawable/delete_bg"
+                android:visibility="gone" >
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/line" />
+
+    <com.yujunkang.fangxinbao.control.NetworkProgressButton
+        android:id="@+id/btn_fetch_verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_green"
+        app:buttonText="@string/register_fetch_verifycode"
+        app:loadingPrompt="@string/register_fetch_verifycode_loading"
+        app:textSize="18" >
+    </com.yujunkang.fangxinbao.control.NetworkProgressButton>
+
+</LinearLayout>

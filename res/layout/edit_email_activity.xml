@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:lefticon="@drawable/back_btn_normal" />
+
+        <TextView
+            android:id="@+id/ContentTopText"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/register_email_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+         >
+
+        <com.yujunkang.fangxinbao.control.validator.FormEditText
+            android:id="@+id/et_email"
+            style="@style/NormalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:hint="@string/register_email_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            app:editType="email" />
+    </LinearLayout>
+
+    <com.yujunkang.fangxinbao.control.NetworkProgressButton
+        android:id="@+id/btn_register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_green"
+        app:buttonText="@string/register_fetch_verifycode"
+        app:loadingPrompt="@string/register_fetch_verifycode_loading"
+        app:textSize="18" >
+    </com.yujunkang.fangxinbao.control.NetworkProgressButton>
+
+</LinearLayout>

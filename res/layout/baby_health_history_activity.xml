@@ -1,0 +1,185 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/TitleStyle"
+            android:layout_width="fill_parent" >
+
+            <TextView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/settings"
+                android:padding="5dip" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TitleMiddleTextStyle"
+                android:text="@string/reset_password_title" />
+        </RelativeLayout>
+
+        <com.yujunkang.fangxinbao.control.calendar.CalendarCardPager
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_holiday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/table_item_padding" >
+
+                <TextView
+                    android:id="@+id/tv_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="星期1"
+                    android:textColor="?attr/normalTextColorReferenceValue"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_holiday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/tv_week"
+                    android:textColor="@color/holiday_color" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/birthday_interval"
+                    android:drawablePadding="5dip"
+                    android:gravity="center_vertical"
+                    android:text="99天"
+                    android:textColor="@color/gray_tip_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gray_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/table_item_padding" >
+
+            <LinearLayout
+                android:id="@+id/ll_edit_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="今天带宝宝去了医院，发现只是普通的发烧"
+                    android:textColor="?attr/normalTextColorReferenceValue"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/btn_edit_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notes" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/add_tip"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/add_health_tip"
+                android:textColor="#98c5e9"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/line" />
+
+        <com.yujunkang.fangxinbao.control.TemperatureCureView
+            android:id="@+id/temperature_curveView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            app:connectionImage="@drawable/icon_temperature_low"
+            app:gradientColorOnEnd="@color/mainbackground"
+            app:gradientColorOnMiddle="#d0f1f1"
+            app:gradientColorOnStart="#abe7e5"
+            app:horizontalLineStrokeWidth="1"
+            app:lineColor="@color/temperature_line_color"
+            app:lineStrokeWidth="4"
+            app:proportion="0.9"
+            app:temperatureTextSize="16"
+            app:temperatureYTextColor="@color/gray_tip_color"
+            app:temperatureYTextSize="13"
+            app:timeTextColor="@color/black"
+            app:timeTextSize="15" >
+        </com.yujunkang.fangxinbao.control.TemperatureCureView>
+
+        <TextView
+            android:id="@+id/tv_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:gravity="center_horizontal"
+            android:text="@string/empty_health_data"
+            android:textColor="@color/gray_tip_color"
+            android:visibility="gone"
+            android:textSize="24dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="15dip"
+        android:layout_marginRight="15dip"
+        android:drawableRight="@drawable/arrow_more"
+        android:gravity="center_vertical"
+        android:text="@string/temperature_collapse"
+        android:textColor="@color/gray_tip_color"
+        android:textSize="18dip" />
+
+</FrameLayout>

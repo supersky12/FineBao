@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login_account_hint">手机号/邮箱</string>
+    <string name="login_password_hint">登录密码</string>
+    <string name="register_phone_hint">输入您的手机号</string>
+    <string name="register_password_hint">6-16位数字和英文的结合</string>
+    <string name="register_nickname_hint">不超过7个汉字或15个字符</string>
+    <string name="register_birthday_hint">选择宝宝的生日</string>
+    <string name="register_sex_hint">男孩儿</string>
+    <string name="register_verifycode_hint">输入6位短信验证码</string>
+    <string name="register_email_hint">请输入正确的邮箱地址</string>
+    <string name="reset_password_hint">请输入新密码</string>
+    <string name="edit_baby_nickname_hint">输入您宝宝的昵称</string>
+    <string name="change_phone_password_hint">请输入密码</string>
+
+    <!-- 修改密码 -->
+    <string name="old_password_hint">输入当前使用密码</string>
+    <string name="new_password_hint">输入要使用的新密码</string>
+    <string name="feedback_content_hint">请输入您的建议，我们将为您不断进步</string>
+    <string name="feedback_contact_hint">输入要使用的新密码</string>
+    <!-- 健康备忘录 -->
+    <string name="health_tip_hint">在这里输入宝宝一天的健康情况</string>
+
+</resources>

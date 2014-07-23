@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="XTheme" parent="android:Theme">
+
+        <!-- Window attributes -->
+        <item name="android:windowTitleStyle">@style/XWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/StatusBarBackground</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomLightTheme" parent="@android:style/Theme.Light.NoTitleBar">
+
+        <!-- Window attributes -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/mainbackground</item>
+        <item name="titleReferenceValue">@color/color_title_bg</item>
+        <item name="normalTextColorReferenceValue">@color/black</item>
+        <item name="listViewItemReferenceValue">@drawable/button07_bg</item>
+        <item name="android:textColorPrimaryInverse">@android:color/primary_text_light</item>
+        <item name="sdlDialogStyle">@style/DialogStyleLight</item>
+    </style>
+
+    <style name="CustomDarkTheme" parent="android:Theme.NoTitleBar">
+
+        <!-- Window attributes -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="titleReferenceValue">@color/color_title_bg</item>
+        <item name="normalTextColorReferenceValue">@color/white</item>
+        <item name="listViewItemReferenceValue">@drawable/button07_bg</item>
+        <item name="android:textColorPrimaryInverse">@android:color/primary_text_light</item>
+        <item name="sdlDialogStyle">@style/DialogStyleDark</item>
+    </style>
+
+    <style name="MainTheme" parent="CustomLightTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="LoadingTheme" parent="android:Theme.Black">
+
+        <!-- Window attributes -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading</item>
+        <!-- <item name="android:windowBackground">@drawable/black</item> -->
+    </style>
+
+    <style name="BlueTheme" parent="@android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/mainbackground</item>
+        <item name="titleReferenceValue">@color/color_title_bg_blue</item>
+        <item name="normalTextColorReferenceValue">@color/color_title_bg_blue</item>
+        <item name="listViewItemReferenceValue">@drawable/button07_bg</item>
+    </style>
+
+    <style name="DialogStyleLight.Custom">
+
+        <!-- anything can be left out: -->
+        <item name="titleTextColor">@color/dialog_title_text</item>
+        <item name="titleSeparatorColor">@color/dialog_title_separator</item>
+        <item name="messageTextColor">@color/dialog_message_text</item>
+        <item name="buttonTextColor">@color/dialog_button_text</item>
+        <item name="buttonSeparatorColor">@color/dialog_button_separator</item>
+        <item name="buttonBackgroundColorNormal">@color/dialog_button_normal</item>
+        <item name="buttonBackgroundColorPressed">@color/dialog_button_pressed</item>
+        <item name="buttonBackgroundColorFocused">@color/dialog_button_focused</item>
+    </style>
+
+    <style name="DialogStyleDark.Custom">
+
+        <!-- anything can be left out: -->
+        <item name="titleTextColor">@color/dialog_title_text_dark</item>
+        <item name="titleSeparatorColor">@color/dialog_title_separator_dark</item>
+        <item name="messageTextColor">@color/dialog_message_text_dark</item>
+        <item name="buttonTextColor">@color/dialog_button_text_dark</item>
+        <item name="buttonSeparatorColor">@color/dialog_button_separator_dark</item>
+        <item name="buttonBackgroundColorNormal">@color/dialog_button_normal_dark</item>
+        <item name="buttonBackgroundColorPressed">@color/dialog_button_pressed_dark</item>
+        <item name="buttonBackgroundColorFocused">@color/dialog_button_focused_dark</item>
+    </style>
+
+</resources>

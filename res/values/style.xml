@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="StatusBarBackground">
+        <item name="android:background">#5ea9e1</item>
+    </style>
+
+    <style name="XWindowTitle" parent="@android:style/TextAppearance.WindowTitle">
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:textAppearance">@style/WindowTitle</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="WindowTitle">
+        <item name="android:textColor">#cfe5f6</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ContentTopTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">19dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff47505B</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ShadowTextStyle">
+        <item name="android:shadowColor">#ff47505B</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="ShadowBlackAboveTextStyle">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="ShadowSearchAboveTextStyle">
+        <item name="android:shadowColor">#fff6b03c</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="ShadowBlackBelowTextStyle">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="ShadowWhiteBelowTextStyle">
+        <item name="android:shadowColor">#77ffffff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- 下面是每个Activity的标题栏的式样，包括左边的按钮，中间的文字，右边的按钮 -->
+    <style name="TitleStyle">
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+        <item name="android:background">?attr/titleReferenceValue</item>
+    </style>
+
+    <style name="TitleLeftButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_xl_padding</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/back_btn_normal</item>
+    </style>
+
+    <style name="TitleMiddleTextStyle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleRightButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="dialog_no_border_transparent_background" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="NoBorderDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <!-- 下面是每个Activity的底部的菜单栏的高度 -->
+    <style name="BottomMenuHeight">
+        <item name="android:layout_height">55dip</item>
+        <item name="android:background">#ffe8edf1</item>
+    </style>
+
+    <style name="TransparentDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="PopupDownAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_down_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_down_exit</item>
+    </style>
+
+    <style name="PopupUpAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_up_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_down_exit</item>
+    </style>
+
+    <style name="AlongTheUpArrowAnimation">
+        <item name="@android:windowEnterAnimation">@anim/along_the_up_arrow</item>
+    </style>
+
+    <style name="TranslateFromBottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/translate_visible_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/translate_gone_into_bottom</item>
+    </style>
+
+    <style name="TranslateFromRightAnimation">
+        <item name="android:windowEnterAnimation">@anim/translate_visible_from_right</item>
+        <item name="android:windowExitAnimation">@anim/translate_gone_into_right</item>
+    </style>
+
+    <style name="Animation.Popup" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_full_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_full_out</item>
+    </style>
+
+    <style name="Translucent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="AppManagerTab" parent="android:style/Theme.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="NormalEditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">?attr/normalTextColorReferenceValue</item>
+        <item name="android:textColorHint">@color/color_hint</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NormalListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@null</item>
+    </style>
+
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    
+    
+</resources>

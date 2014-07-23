@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yujunkang.fangxinbao.control.TemperatureCureView
+        android:id="@+id/temperature_curveView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:connectionImage="@drawable/icon_temperature_low"
+        app:horizontalLineStrokeWidth="1"
+        app:lineColor="@color/temperature_line_color"
+        app:lineStrokeWidth="4"
+        app:temperatureTextSize="16"
+        app:temperatureYTextColor="@color/black"
+        app:temperatureYTextSize="14"
+        app:timeTextColor="@color/black"
+        app:timeTextSize="15" >
+    </com.yujunkang.fangxinbao.control.TemperatureCureView>
+
+    <com.yujunkang.fangxinbao.activity.PathView
+        android:id="@+id/pathView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

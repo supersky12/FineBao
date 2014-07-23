@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:id="@+id/zoom_img_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yujunkang.fangxinbao.control.image.ZoomImageView
+            android:id="@+id/zoom_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.yujunkang.fangxinbao.control.image.CaptureView
+        android:id="@+id/capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dip"
+        android:background="#55FFFFFF" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/button_black"
+            android:text="@string/button_cancel"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/turn_btn_x" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/button_black"
+            android:text="@string/button_done"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_head_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temperature_middle_content_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="3dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_connection_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progress_connection"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/style_common_processbar" />
+
+            <TextView
+                android:id="@+id/tv_refresh_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/check_status"
+                android:textColor="@color/white"
+                android:textSize="17dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_temperature_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_temperature"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="37.1"
+                    android:textColor="@color/white"
+                    android:textSize="60dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature_symbol"
+                    android:textColor="@color/white"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_temperature_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/temperature_status_bg"
+                android:gravity="center_horizontal"
+                android:minWidth="100dip"
+                android:padding="10dip"
+                android:text="@string/check_status"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" >
+
+            <TextView
+                android:id="@+id/tv_temperature_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:maxLines="2"
+                android:text="当前体温正常"
+                android:textColor="@color/white"
+                android:textSize="18dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_recent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/threedays_temperature_info"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="20dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continued_time"
+                    android:textColor="@color/gray_tip_color"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_temperature_continued"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_temperature_continued"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:text="16"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="24dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/hours"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_temperature"
+                    android:textColor="@color/gray_tip_color"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_temperature_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_temperature_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:text="16"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="24dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/temperature_symbol"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_cure"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="15dip"
+            android:text="@string/onedays_temperature_info"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="20dip" />
+
+        <com.yujunkang.fangxinbao.control.TemperatureCureView
+            android:id="@+id/temperature_curveView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            app:connectionImage="@drawable/icon_temperature_low"
+            app:gradientColorOnEnd="@color/white"
+            app:gradientColorOnMiddle="#d0f1f1"
+            app:gradientColorOnStart="#abe7e5"
+            app:horizontalLineStrokeWidth="1"
+            app:lineColor="@color/temperature_line_color"
+            app:lineStrokeWidth="4"
+            app:proportion="1"
+            app:temperatureTextSize="16"
+            app:temperatureYTextColor="@color/gray_tip_color"
+            app:temperatureYTextSize="12"
+            app:timeTextColor="@color/black"
+            app:timeTextSize="15"
+            app:totalHeight="430" >
+        </com.yujunkang.fangxinbao.control.TemperatureCureView>
+    </LinearLayout>
+
+</LinearLayout>

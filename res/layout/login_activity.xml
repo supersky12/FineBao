@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleLeftButtonStyle" />
+
+        <TextView
+            android:id="@+id/ContentTopText"
+            style="@style/TitleMiddleTextStyle"
+            android:text="" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/login_title"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="@dimen/text_size_title" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_select_country"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_height_l"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_country_code"
+                style="@style/NormalEditText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_xl_padding"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text="+"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/vertical_line" />
+
+            <RelativeLayout
+                android:id="@+id/btn_select_country"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/btn_height_l"
+                android:layout_weight="0.7"
+                android:background="@drawable/button07_bg"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_country_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/layout_xl_padding"
+                    android:src="@drawable/gray_right_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/layout_nomal_padding"
+                    android:layout_toLeftOf="@id/iv_country_arrow"
+                    android:textColor="?attr/normalTextColorReferenceValue"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+        <com.yujunkang.fangxinbao.control.validator.FormEditText
+            android:id="@+id/et_account"
+            style="@style/NormalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_l"
+            android:gravity="center"
+            android:hint="@string/login_account_hint"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            app:emptyAllowed="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/NormalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_l"
+            android:gravity="center"
+            android:hint="@string/login_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColor="?attr/normalTextColorReferenceValue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/btn_change_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/login_change_national_country"
+                android:textColor="@color/blue_light"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/btn_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/login_forget_password"
+                android:textColor="@color/blue_light"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.yujunkang.fangxinbao.control.NetworkProgressButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_green"
+        app:buttonText="@string/login"
+        app:loadingPrompt="@string/login_loading"
+        app:textSize="18" >
+    </com.yujunkang.fangxinbao.control.NetworkProgressButton>
+
+</LinearLayout>

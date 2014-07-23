@@ -1,0 +1,123 @@
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="grey_end">#808080</color>
+    <color name="dark_gray">#ff475058</color>
+    <color name="gray_blue">#ff596a77</color>
+    <color name="gray_black">#6D7D98</color>
+    <color name="light_green">#ff599543</color>
+    <color name="light_gray">#ffacacac</color>
+    <color name="magenta">#ffea6029</color>
+    <color name="dark_blue_green">#ff3a6280</color>
+    <color name="light_blue_green">#ff3aa5db</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent_gray">#99999999</color>
+    <color name="dark_green">#5FB713</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="mainbackground">#f0eff4</color>
+
+    <drawable name="gray">#999999</drawable>
+    <drawable name="white">#FFFFFFFF</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="blue">#0000FF</drawable>
+    <drawable name="green">#00FF00</drawable>
+    <drawable name="red">#FF0000</drawable>
+    <drawable name="trans">#00ffffff</drawable>
+    <drawable name="light">#00ffffff</drawable>
+    <drawable name="buttonbackground">#7B92AD</drawable>
+    <drawable name="listLine">#237ec2</drawable>
+    <drawable name="bottommenu">#cddade</drawable>
+    <drawable name="normalText">#3e3e3e</drawable>
+    <drawable name="content_top">#237ec2</drawable>
+    <drawable name="content_top_two">#52555a</drawable>
+    <drawable name="content_top_title">#cddade</drawable>
+
+    <!-- 日历属性 -->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ffebebeb</color>
+    <color name="calendar_selected_today_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#e6e6e6</color>
+    <color name="calendar_text_active">#999999</color>
+    <color name="calendar_text_title">@color/white</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="custom_header_text">#85B100</color>
+    <color name="custom_selected">#A8D324</color>
+    <color name="custom_background">#F0F8DB</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+    <color name="result_list_odd_color">#ff104573</color>
+    <color name="result_list_even_color">#ff1f5889</color>
+    <color name="search_txt_color">#ff8091a8</color>
+    <color name="state_normal_color">#ff2998eb</color>
+    <color name="state_special_color">#ffea5d20</color>
+    <color name="state_arrive_color">#ff4ba835</color>
+    <color name="state_exceed_color">#ffb3c0c6</color>
+    <color name="holiday_color">#f88d86</color>
+
+    <drawable name="drawablecolor1">#880a2b49</drawable>
+    <drawable name="drawablecolor2">#ff0a2b49</drawable>
+
+    <color name="detail_list_background">#fff2f2f2</color>
+    <color name="hb_off">#ffb3c0c6</color>
+    <color name="hb_on">#ff5fb713</color>
+
+    <drawable name="listselector">#ffEDF3F8</drawable>
+
+    <color name="result_list_item_color">#ffFAFBFC</color>
+    <color name="result_list_item_pressed_color">#ffdddddd</color>
+    <color name="table_item_background">#ffb1bbca</color>
+    <color name="list_head_bg">#fafbfc</color>
+    <color name="list_bg">#e8edf1</color>
+    <color name="edittext_hint_color">#b3b3b3</color>
+    <color name="profile_text_color">@color/black</color>
+    <color name="spce">#ff394147</color>
+    <color name="spce_pressed">#ff4a5258</color>
+    <color name="color_title_bg">#70b2e5</color>
+    <color name="color_title_bg_blue">#2ea7e0</color>
+    <color name="txt_fg_deep_normal">#ff708097</color>
+    <color name="button_settings_normal">#f0f0f0</color>
+
+    <!-- custom light theme: -->
+    <color name="dialog_message_text">#333333</color>
+    <color name="dialog_title_text">#f3a71e</color>
+    <color name="dialog_title_separator">#f3a71e</color>
+    <color name="dialog_button_text">#333333</color>
+    <color name="dialog_button_normal">@android:color/transparent</color>
+    <color name="dialog_button_pressed">#99f3a71e</color> <!-- 60 % opacity -->
+    <color name="dialog_button_focused">#4Cf3a71e</color> <!-- 30 % opacity -->
+    <color name="dialog_button_separator">#25000000</color> <!-- 7% opacity -->
+    <color name="background">#FFA500</color>
+    <!-- custom dark theme: -->
+    <color name="dialog_message_text_dark">#FFFFFF</color>
+    <color name="dialog_title_text_dark">#F8A500</color>
+    <color name="dialog_title_separator_dark">#F8A500</color>
+    <color name="dialog_button_text_dark">#FFFFFF</color>
+    <color name="dialog_button_normal_dark">@android:color/transparent</color>
+    <color name="dialog_button_pressed_dark">#99F8A500</color> <!-- 60 % opacity -->
+    <color name="dialog_button_focused_dark">#4CF8A500</color> <!-- 30 % opacity -->
+    <color name="dialog_button_separator_dark">#12FFFFFF</color> <!-- 7% opacity -->
+    <color name="background_dark">#C35817</color>
+
+    <!-- 灰色字的颜色 -->
+    <color name="gray_tip_color">#989999</color>
+    <color name="color_hint">#b3b3b3</color>
+
+    <drawable name="holo_blue_bright">#ff00ddff</drawable>
+
+    <color name="blue_light">#70b2e5</color>
+
+    <drawable name="vertical_line">#ffc8c7cc</drawable>
+
+    <color name="temperature_line_color">#2ea7e0</color>
+
+</resources>

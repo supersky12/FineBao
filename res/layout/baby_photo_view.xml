@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:id="@+id/btn_change_photo"
+    android:background="@drawable/button07_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dip"
+    android:paddingLeft="@dimen/table_item_padding"
+    android:paddingRight="@dimen/table_item_padding"
+    android:paddingTop="8dip" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/baby_photo_label"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="@dimen/text_size_normal" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/gray_right_arrow" />
+
+    <com.yujunkang.fangxinbao.control.image.RoundedNetWorkImageView
+        android:id="@+id/iv_baby_photo"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        android:scaleType="fitXY"
+        android:src="@drawable/baby_no_photo"
+        app:border_color="@color/transparent"
+        app:border_width="1dip"
+        app:corner_radius="12dip"
+        app:oval="false" />
+
+</RelativeLayout>

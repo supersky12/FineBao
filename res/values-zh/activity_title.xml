@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="select_country_activity">选择国家和地区</string>
+    <string name="fetch_verifycode_activity_reset_password">重设密码</string>
+    <string name="fetch_verifycode_activity_register">手机注册</string>
+    <string name="fetch_verifycode_activity_modify_phone">手机注册</string>
+    <string name="confirm_verifycode_activity">输入验证码</string>
+    <string name="forget_password_title">重设密码</string>
+    <string name="modify_phone_title">输入新手机号</string>
+    <string name="register_last_step">最后一步</string>
+    <string name="register_email_title">输入邮箱地址</string>
+    <string name="reset_password_title">设置新密码</string>
+    <string name="baby_info_title">我的宝贝</string>
+    <string name="edit_baby_nickname_title">修改昵称</string>
+    <string name="about_activity_title">关于</string>
+    <string name="settings_activity_title">设置</string>
+    <string name="settings_max_temperature_activity_title">高温报警</string>
+    <string name="settings_min_temperature_activity_title">低温报警</string>
+    <string name="settings_normal_temperature_activity_title">温度标准</string>
+    <string name="modify_password_title">修改密码</string>
+    <string name="modify_phone_login_activity_title">验证密码</string>
+    <string name="add_baby_activity_title">填写您另一宝宝的资料</string>
+    <string name="feedback_activity_title">意见反馈</string>
+    <string name="setting_language_activity_title">选择语言界面</string>
+
+</resources>

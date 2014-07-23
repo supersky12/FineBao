@@ -1,0 +1,13 @@
+<resources>
+
+     <string name="app_name">放心宝</string>
+    <string name="mDomain">http://fxbabyfx.duapp.com</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="choose_sex"> 选择性别</string>
+    <string name="country_code"> +%s </string>
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">yyyy年M月</string>
+    <string name="month_key_format">yyyyMM</string>
+
+</resources>

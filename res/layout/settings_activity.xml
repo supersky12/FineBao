@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:lefticon="@drawable/back_btn_normal" />
+
+        <TextView
+            android:id="@+id/tv_settings_title"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/settings_activity_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/item_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/settings_battery"
+                    app:rightLabel="50%"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_temperature_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/settings_normal_temperature_title"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_max_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/settings_max_temperature_title"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_min_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/settings_min_temperature"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_modify_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:background="@drawable/button07_bg"
+                    android:paddingLeft="@dimen/table_item_padding"
+                    android:paddingRight="@dimen/table_item_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/settings_phone"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_phone_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/gray_right_arrow" />
+
+                    <com.yujunkang.fangxinbao.control.PhoneTextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dip"
+                        android:layout_toLeftOf="@id/iv_phone_arrow"
+                        android:textColor="@color/gray_tip_color"
+                        android:textSize="@dimen/text_size_normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_modify_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:background="@drawable/button07_bg"
+                    android:paddingLeft="@dimen/table_item_padding"
+                    android:paddingRight="@dimen/table_item_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/settings_password"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_password_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/gray_right_arrow" />
+
+                    <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dip"
+                        android:layout_toLeftOf="@id/iv_password_arrow"
+                        android:inputType="textPassword"
+                        android:textColor="@color/gray_tip_color"
+                        android:textSize="@dimen/text_size_normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_binding_sina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/settings_binding_sina"
+                    app:rightLabel="@string/binding_sina_default_label"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/settings_email"
+                    app:rightLabel="@string/binding_email_default_label"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_modify_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:background="@drawable/button07_bg"
+                    android:paddingLeft="@dimen/table_item_padding"
+                    android:paddingRight="@dimen/table_item_padding" >
+
+                    <ImageView
+                        android:id="@+id/iv_language_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/gray_right_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/settings_language"
+                        android:textColor="?attr/normalTextColorReferenceValue"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_language_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/gray_right_arrow" />
+
+                    <TextView
+                        android:id="@+id/tv_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dip"
+                        android:layout_toLeftOf="@id/iv_language_arrow"
+                        android:inputType="textPassword"
+                        android:textColor="@color/gray_tip_color"
+                        android:textSize="@dimen/text_size_normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/button07_bg"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:text="@string/setting_logout"
+                android:textSize="18dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

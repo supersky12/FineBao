@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+<string name="pull_to_refresh_pull_label">下拉刷新…</string>
+  <string name="pull_to_refresh_release_label">放开以刷新…</string>
+  <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+  
+  <string name="pull_to_refresh_device_pull_label">下拉重连设备…</string>
+  <string name="pull_to_refresh_device_release_label">放开以重连设备…</string>
+  <string name="pull_to_refresh_device_refreshing_label">正在监测…</string>
+  
+  <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:lefticon="@drawable/back_btn_normal"
+            app:txtcolor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_about_title"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/about_activity_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/about_logo" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/about_activity_title"
+                    android:textColor="?attr/normalTextColorReferenceValue"
+                    android:textSize="20dip" />
+                
+     
+        
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_sina_weibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/about_sina_label"
+                    app:rightLabel="@string/about_sina_fangxinbao"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_call_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/about_service_phone"
+                    app:rightLabel=""
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_check_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/about_check_version"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_send_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/about_feedback"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="@dimen/table_item_padding"
+                    android:background="@drawable/line" />
+
+                <com.yujunkang.fangxinbao.control.TableItemView
+                    android:id="@+id/btn_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button07_bg"
+                    app:leftLabel="@string/about_agreement"
+                    app:rightTextColor="@color/gray_tip_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

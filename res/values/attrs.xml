@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="FlatButton">
+        <attr name="lefticon" format="reference" />
+        <attr name="middletxt" format="string|reference" />
+        <attr name="txtcolor" format="reference|color" />
+        <!-- <attr name="txtsize" format="dimension"/> -->
+        <attr name="txtsize" format="float" />
+        <attr name="righticon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="NetworkProgressButton">
+        <attr name="buttonText" format="string|reference" />
+        <attr name="loadingPrompt" format="string|reference" />
+        <attr name="textSize" format="float" />
+    </declare-styleable>
+
+    <attr name="titleReferenceValue" format="reference" />
+    <attr name="mainBackgroundReferenceValue" format="reference" />
+    <attr name="normalTextColorReferenceValue" format="reference" />
+    <attr name="listViewItemReferenceValue" format="reference" />
+
+    <declare-styleable name="FormEditText">
+        <attr name="editType">
+            <enum name="email" value="1" />
+            <enum name="phone" value="2" />
+            <enum name="nocheck" value="10" />
+        </attr>
+        <attr name="testErrorString" format="string" />
+        <attr name="emptyErrorString" format="string" />
+        <attr name="customRegexp" format="string" />
+        <attr name="customFormat" format="string" />
+        <attr name="emptyAllowed" format="boolean" />
+        <attr name="classType" format="string" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="CalendarCardPager">
+        <attr name="android:background" />
+        <attr name="dividerColor" format="color" />
+        <attr name="dayBackground" format="reference" />
+        <attr name="dayTextColor" format="color" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="headerTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="calendar_cell">
+        <attr name="state_selectable" format="boolean" />
+        <attr name="state_current_month" format="boolean" />
+        <attr name="state_today" format="boolean" />
+        <attr name="state_highlighted" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TableItemView">
+        <attr name="leftLabel" format="reference|string" />
+        <attr name="rightLabel" format="reference|string" />
+        <attr name="leftTextColor" format="reference" />
+        <attr name="rightTextColor" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SettingTemperatureView">
+        <attr name="increase" format="float" />
+    </declare-styleable>
+    <declare-styleable name="TemperatureView">
+
+        <!-- 背景图片 -->
+        <attr name="backgroundImage" format="reference" />
+
+        <!-- 连接线的图片图片 -->
+        <attr name="connectionImage" format="reference" />
+        <!-- 连接线的颜色 -->
+        <attr name="lineColor" format="reference|color" />
+        <!-- 温度字体大小 dip -->
+        <attr name="temperatureTextSize" format="float" />
+        <!-- 线的宽度 -->
+        <attr name="lineStrokeWidth" format="float" />
+        <!-- 时间字体大小 dip -->
+        <attr name="timeTextSize" format="float" />
+        <!-- 时间文字的颜色 -->
+        <attr name="timeTextColor" format="reference" />
+
+        <!-- 温度文字的颜色 -->
+        <attr name="temperatureTextColor" format="reference" />
+
+        <!-- Y 坐标温度文字的颜色 -->
+        <attr name="temperatureYTextColor" format="reference" />
+        <!-- Y 坐标温度文字的大小 -->
+        <attr name="temperatureYTextSize" format="float" />
+        <attr name="horizontalLineStrokeWidth" format="float" />
+        <attr name="proportion" format="float" />
+        <attr name="gradientColorOnStart" format="reference|color" />
+        <attr name="gradientColorOnMiddle" format="reference|color" />
+        <attr name="gradientColorOnEnd" format="reference|color" />
+         <attr name="totalHeight" format="reference|float" />
+          <attr name="hSpacing" format="reference|float" />
+         
+    </declare-styleable>
+
+</resources>

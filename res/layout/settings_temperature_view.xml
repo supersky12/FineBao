@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:src="@drawable/reduce" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="fffffff"
+        android:textColor="?attr/normalTextColorReferenceValue"
+        android:textSize="@dimen/text_size_normal" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/increase" />
+    </LinearLayout>
+
+</merge>

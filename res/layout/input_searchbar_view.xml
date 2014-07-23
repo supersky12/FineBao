@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res/com.flightmanager.view"
+    android:id="@+id/hotel_select_city_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_bar_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/button_white_rounded_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/et_search_condition"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="5dip"
+            android:text=""
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:padding="3dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" >
+        </EditText>
+
+        <!-- 取消按钮 -->
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/delete_bg"
+            android:visibility="gone" >
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>

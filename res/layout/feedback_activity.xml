@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleLeftButtonStyle" />
+
+        <TextView
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/feedback_activity_title" />
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_submit"
+            style="@style/TitleRightButtonStyle"
+            app:middletxt="@string/button_submit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginBottom="10dip"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:hint="@string/feedback_content_hint"
+            android:maxLength="250"
+            android:maxLines="4"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textColorHint="@color/color_hint"
+            android:textSize="@dimen/text_size_normal" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/feedback_contact_label"
+            android:textColor="?attr/normalTextColorReferenceValue"
+            android:textSize="@dimen/text_size_normal" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_userContact"
+            style="@style/NormalEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:gravity="center_vertical"
+            android:hint="@string/feedback_contact_hint"
+            android:maxLength="25"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</LinearLayout>

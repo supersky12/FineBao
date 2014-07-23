@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yujunkang.fangxinbao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleStyle"
+        android:layout_width="fill_parent" >
+
+        <com.yujunkang.fangxinbao.control.FlatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_xl_padding"
+            app:lefticon="@drawable/back_btn_normal" />
+
+        <TextView
+            android:id="@+id/tv_baby_nickname_title"
+            style="@style/TitleMiddleTextStyle"
+            android:text="@string/register_last_step" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            
+            layout="@layout/baby_photo_view"
+             >
+        </include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/line" />
+
+        <!-- 昵称 -->
+
+        <RelativeLayout
+            android:id="@+id/btn_change_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:background="@drawable/button07_bg"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/baby_nickname_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/iv_nickname_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gray_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_baby_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/iv_nickname_arrow"
+                android:singleLine="true"
+                android:text="@string/baby_nickname_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/line" />
+        <!-- 性别 -->
+
+        <RelativeLayout
+            android:id="@+id/btn_choose_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:background="@drawable/button07_bg"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/baby_sex_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/iv_sex_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gray_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_baby_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/iv_sex_arrow"
+                android:gravity="right"
+                android:text="3333"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textColorHint="@color/color_hint"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/btn_choose_born"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:background="@drawable/button07_bg"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/baby_born_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/iv_born_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gray_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_baby_born"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/iv_born_arrow"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textColorHint="@color/color_hint"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/btn_choose_other"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_item_height"
+            android:background="@drawable/button07_bg"
+            android:paddingLeft="@dimen/table_item_padding"
+            android:paddingRight="@dimen/table_item_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/check_other_baby_label"
+                android:textColor="?attr/normalTextColorReferenceValue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gray_right_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</LinearLayout>

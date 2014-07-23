@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_white_rounded"
+    android:gravity="center_horizontal"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip"
+    android:textColor="?attr/normalTextColorReferenceValue"
+    android:textSize="@dimen/text_size_normal" >
+
+</TextView>
